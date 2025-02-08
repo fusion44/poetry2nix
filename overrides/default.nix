@@ -3460,7 +3460,7 @@ lib.composeManyExtensions [
           getCargoHash = version: {
             "0.9.5" = {
               # https://raw.githubusercontent.com/astral-sh/ruff/0.9.5/Cargo.lock
-              lockFile = ./ruff/0.9.6-Cargo.lock;
+              lockFile = ./ruff/0.9.5-Cargo.lock;
               outputHashes = {
                 "lsp-types-0.95.1" = "sha256-8Oh299exWXVi6A39pALOISNfp8XBya8z+KT/Z7suRxQ=";
                 # lock file has a revision override
