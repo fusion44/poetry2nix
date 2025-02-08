@@ -4091,7 +4091,7 @@ lib.composeManyExtensions [
 
           getCargoHash = version: {
             "1.0.4".outputHashes = {
-              "notify-6.1.1" = "sha256-lT3R5ZQpjx52NVMEKTTQI90EWT16YnbqphqvZmNpw/I=";
+              "notify-8.0.0" = "";
             };
             "0.24.0".outputHashes = {
               "notify-6.1.1" = "sha256-lT3R5ZQpjx52NVMEKTTQI90EWT16YnbqphqvZmNpw/I=";
