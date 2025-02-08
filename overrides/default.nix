@@ -3464,7 +3464,7 @@ lib.composeManyExtensions [
               outputHashes = {
                 "lsp-types-0.95.1" = "sha256-8Oh299exWXVi6A39pALOISNfp8XBya8z+KT/Z7suRxQ=";
                 # lock file has a revision override
-                "salsa-0.18.0" = "sha256-VoYV13GsTaAWoLcSfuadLR2l8Xbn0MEd/Uh9EP/DgjE=";
+                "salsa-0.18.0" = "sha256-esWNyc3TcIhFul4VjtZH991aZp03BUVgvzCFqt6GtUg=";
               };
             };
             "0.8.6" = {
