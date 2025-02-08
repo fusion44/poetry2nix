@@ -11394,7 +11394,7 @@
     "setuptools"
   ],
   "loguru": [
-    "setuptools"
+    "flit-core"
   ],
   "logutils": [
     "setuptools"
