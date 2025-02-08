@@ -15052,6 +15052,9 @@
     "flit-core",
     "setuptools"
   ],
+  "orderly-set": [
+    "setuptools"
+  ],
   "orderedmultidict": [
     "setuptools"
   ],
