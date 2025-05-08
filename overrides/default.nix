@@ -363,6 +363,7 @@ lib.composeManyExtensions [
             "4.1.3" = "sha256-Uag1pUuis5lpnus2p5UrMLa4HP7VQLhKxR5TEMfpK0s=";
             "4.2.0" = "sha256-dOS9A3pTwXYkzPFFNh5emxJw7pSdDyY+mNIoHdwNdmg=";
             "4.2.1" = "sha256-vbGF0oOhEDg3QIyQ0lASqbWtTWXiPAmGMnlF9I+hU78=";
+            "4.3.0" = "sha256-92MEpnrUhdqpgMuXicy9c5gfdXYY0eq5Ak9fvNXAgMk=";
           }.${version} or (
             lib.warn "Unknown bcrypt version: '${version}'. Please update getCargoHash." lib.fakeHash
           );
@@ -618,6 +619,8 @@ lib.composeManyExtensions [
             "43.0.1" = "sha256-wiAHM0ucR1X7GunZX8V0Jk2Hsi+dVdGgDKqcYjSdD7Q=";
             "43.0.3" = "sha256-d3Gt4VrBWk6qowwX0Epp4mc1PbySARVU9YMsHYKImCs=";
             "44.0.0" = "sha256-LJIY2O8ul36JQmhiW8VhLCQ0BaX+j+HGr3e8RUkZpc8=";
+            "44.0.1" = "sha256-6inZ5HEnQmW5U+H+QG5eRHHdnYYnUQPXNvx6iBGXlOk=";
+            "44.0.2" = "sha256-A3A9IiwcqZGSxpChsWuCquG1DNgiOzayWp43DY3lMXc=";
           }.${version} or (
             lib.warn "Unknown cryptography version: '${version}'. Please update getCargoHash." lib.fakeHash
           );
@@ -2215,6 +2218,10 @@ lib.composeManyExtensions [
           ];
         }
       );
+
+      phonetics = prev.phonetics.overridePythonAttrs (old: {
+        propagatedBuildInputs = old.propagatedBuildInputs or [ ] ++ [ final.setuptools ];
+      });
 
       pikepdf = prev.pikepdf.overridePythonAttrs (
         old: {
