@@ -13779,6 +13779,7 @@
     "setuptools"
   ],
   "mypy-extensions": [
+    "flit-core",
     "setuptools"
   ],
   "mypy-protobuf": [
