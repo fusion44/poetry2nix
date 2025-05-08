@@ -26321,8 +26321,13 @@
     "flit-core",
     "setuptools"
   ],
+  "typing-inspection": [
+    "setuptools",
+    "hatchling"
+  ],
   "typing-inspect": [
-    "setuptools"
+    "setuptools",
+    "hatchling"
   ],
   "typing-validation": [
     "setuptools",
